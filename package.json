@@ -1,0 +1,27 @@
+{
+  "name": "winit",
+  "version": "1.0.0",
+  "bin": {
+    "winit": "bin/index.js"
+  },
+  "author": "minghao.rmh https://github.com/renminghao",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.11.0",
+    "globby": "^6.1.0",
+    "moment": "^2.18.1",
+    "prompt": "^1.0.0"
+  },
+  "description": "webpack脚手架快速生成器",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renminghao/winit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/renminghao/winit/issues"
+  },
+  "homepage": "https://github.com/renminghao/winit#readme"
+}
