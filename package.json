@@ -4,6 +4,9 @@
   "bin": {
     "winit": "bin/index.js"
   },
+	"scripts" : {
+		"eslint" : "eslint ./**/*.js --debug --fix"
+	},
   "author": "minghao.rmh https://github.com/renminghao",
   "license": "ISC",
   "devDependencies": {},
