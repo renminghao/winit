@@ -5,6 +5,8 @@ var pkg = require('../package.json');
 var prompt = require('prompt');
 var moment = require('moment');
 var run = require('../index');
+var cwd = process.cwd();
+var currentDir = cwd.split('/').pop();
 require('colors')
 
 program
@@ -23,7 +25,7 @@ prompt.start();
 
 prompt.get([{
   name : 'NAME',
-  description : '项目名称(webpack):',
+  description : '项目名称(' + currentDir + '):',
   type : 'string'
 },{
   name : 'VERSION',
@@ -34,8 +36,8 @@ prompt.get([{
   description : '作者(空):',
   type : 'string'
 }], function (err, result) {
-  result.NAME = result.NAME || 'webpack';
+  result.NAME = result.NAME || currentDir;
   result.VERSION = result.VERSION || '1.0.0';
-  result.AUTHOR = result.AUTHOR  || ''
+  result.AUTHOR = result.AUTHOR  || '';
   run(result)
 })
