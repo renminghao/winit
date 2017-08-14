@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn;
 var log = require('./log').log;
 
 function install () {
-  var npmInstall = spawn('tnpm',['install']);
+  var npmInstall = spawn('npm',['install']);
 	npmInstall.stdout.on('data', function (data){
 		log(data.toString());
 	})
